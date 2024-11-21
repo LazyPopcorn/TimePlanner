@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Planner</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Trip Planner</h1>
+    <div class="table-responsive">
+      <table id="myTable" class="table table-bordered table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>Location</th>
+            <th>Activity</th>
+            <th>Time</th>
+            <th>Duration</th>
+            <th>Buffer</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Generate 10 rows -->
+          <!-- Each row has 6 columns with input fields -->
+          <!-- Row 1 -->
+          <tr>
+            <td><input type="text" id="cell-1-1" class="form-control"></td>
+            <td><input type="text" id="cell-1-2" class="form-control"></td>
+            <td><input type="time" id="cell-1-3" class="form-control"></td>
+            <td><input type="time" id="cell-1-4" class="form-control"></td>
+            <td><input type="time" id="cell-1-5" class="form-control"></td>
+            <td><input type="text" id="cell-1-6" class="form-control"></td>
+          </tr>
+          <!-- Row 2 -->
+          <tr>
+            <td><input type="text" id="cell-2-1" class="form-control"></td>
+            <td><input type="text" id="cell-2-2" class="form-control"></td>
+            <td><input type="text" id="cell-2-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-2-4" class="form-control"></td>
+            <td><input type="time" id="cell-2-5" class="form-control"></td>
+            <td><input type="text" id="cell-2-6" class="form-control"></td>
+          </tr>
+          <!-- Repeat for rows 3 to 10 -->
+          <!-- Row 3 -->
+          <tr>
+            <td><input type="text" id="cell-3-1" class="form-control"></td>
+            <td><input type="text" id="cell-3-2" class="form-control"></td>
+            <td><input type="text" id="cell-3-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-3-4" class="form-control"></td>
+            <td><input type="time" id="cell-3-5" class="form-control"></td>
+            <td><input type="text" id="cell-3-6" class="form-control"></td>
+          </tr>
+          <!-- Row 4 -->
+          <tr>
+            <td><input type="text" id="cell-4-1" class="form-control"></td>
+            <td><input type="text" id="cell-4-2" class="form-control"></td>
+            <td><input type="text" id="cell-4-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-4-4" class="form-control"></td>
+            <td><input type="time" id="cell-4-5" class="form-control"></td>
+            <td><input type="text" id="cell-4-6" class="form-control"></td>
+          </tr>
+          <!-- Row 5 -->
+          <tr>
+            <td><input type="text" id="cell-5-1" class="form-control"></td>
+            <td><input type="text" id="cell-5-2" class="form-control"></td>
+            <td><input type="text" id="cell-5-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-5-4" class="form-control"></td>
+            <td><input type="time" id="cell-5-5" class="form-control"></td>
+            <td><input type="text" id="cell-5-6" class="form-control"></td>
+          </tr>
+          <!-- Row 6 -->
+          <tr>
+            <td><input type="text" id="cell-6-1" class="form-control"></td>
+            <td><input type="text" id="cell-6-2" class="form-control"></td>
+            <td><input type="text" id="cell-6-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-6-4" class="form-control"></td>
+            <td><input type="time" id="cell-6-5" class="form-control"></td>
+            <td><input type="text" id="cell-6-6" class="form-control"></td>
+          </tr>
+          <!-- Row 7 -->
+          <tr>
+            <td><input type="text" id="cell-7-1" class="form-control"></td>
+            <td><input type="text" id="cell-7-2" class="form-control"></td>
+            <td><input type="text" id="cell-7-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-7-4" class="form-control"></td>
+            <td><input type="time" id="cell-7-5" class="form-control"></td>
+            <td><input type="text" id="cell-7-6" class="form-control"></td>
+          </tr>
+          <!-- Row 8 -->
+          <tr>
+            <td><input type="text" id="cell-8-1" class="form-control"></td>
+            <td><input type="text" id="cell-8-2" class="form-control"></td>
+            <td><input type="text" id="cell-8-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-8-4" class="form-control"></td>
+            <td><input type="time" id="cell-8-5" class="form-control"></td>
+            <td><input type="text" id="cell-8-6" class="form-control"></td>
+          </tr>
+          <!-- Row 9 -->
+          <tr>
+            <td><input type="text" id="cell-9-1" class="form-control"></td>
+            <td><input type="text" id="cell-9-2" class="form-control"></td>
+            <td><input type="text" id="cell-9-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-9-4" class="form-control"></td>
+            <td><input type="time" id="cell-9-5" class="form-control"></td>
+            <td><input type="text" id="cell-9-6" class="form-control"></td>
+          </tr>
+          <!-- Row 10 -->
+          <tr>
+            <td><input type="text" id="cell-10-1" class="form-control"></td>
+            <td><input type="text" id="cell-10-2" class="form-control"></td>
+            <td><input type="text" id="cell-10-3" class="form-control" readonly></td>
+            <td><input type="time" id="cell-10-4" class="form-control"></td>
+            <td><input type="time" id="cell-10-5" class="form-control"></td>
+            <td><input type="text" id="cell-10-6" class="form-control"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
